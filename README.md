@@ -5,7 +5,11 @@ a collapse jquery plugin
 
 usage
 ========
-html
+
+### html
+
+```html
+<pre>
     <ul class="brands">
       <li class="brand">
 				<h3>三星</h3>
@@ -34,8 +38,10 @@ html
 					</li>
 				<ul>
 			</li>
-					
-js  
+	</pre>
+```	
+###js  
+<pre>
   <script src="jquery.min.js"></script>
 	<script src="collapse.js"></script>
 	<script type="text/javascript">
@@ -43,7 +49,7 @@ js
 			$('.brands').collapse({openOnlyOne:true});
 		});
 	</script>
-
+</pre>
 
 params
 ========
