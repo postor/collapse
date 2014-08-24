@@ -41,7 +41,7 @@ usage
 	<script src="collapse.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('.brands').collapse({openOnlyOne:true});
+			$('.brands').collapse({section:'.brand',title:'h3',content:'ul'});
 		});
 	</script>
 
@@ -49,6 +49,25 @@ usage
 params
 ========
 
+### section
+    filter of sections which would add a "actived" class when active
+
+### title
+    filter of title which you can click and expand or collapse the section
+
+### content
+    hide it when collapsed and show it when expanded, by default slideDown or slideUp
+
+### openFirst
+    expand the first section by default
+
+### openOnlyOne
+    when expand a new section collapse others
 
 more
 ========
+
+### you can get the collapse object and use or modify it
+    var o = $('.brands').data('jun_collapse');
+    o.openOnlyOne = false;
+    o.select(3);
