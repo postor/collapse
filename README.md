@@ -7,9 +7,6 @@ usage
 ========
 
 ### html
-
-```html
-<pre>
     <ul class="brands">
       <li class="brand">
 				<h3>三星</h3>
@@ -38,18 +35,16 @@ usage
 					</li>
 				<ul>
 			</li>
-	</pre>
-```	
-###js  
-<pre>
-  <script src="jquery.min.js"></script>
+					
+### js  
+	<script src="jquery.min.js"></script>
 	<script src="collapse.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('.brands').collapse({openOnlyOne:true});
 		});
 	</script>
-</pre>
+
 
 params
 ========
